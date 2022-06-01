@@ -65,7 +65,7 @@ nav .btn {
   justify-content: center;
   align-items: center;
   border: 3px solid var(--secondary-color);
-  transition: 0.25s;
+  transition: 0.25s ease-out;
 }
 
 nav .btn a {
@@ -79,6 +79,11 @@ nav .btn a {
 nav .btn:hover {
   margin-bottom: .5rem;
   box-shadow: 0 .2rem 0 rgb(34, 34, 34);
+}
+
+nav .btn:active {
+  margin-bottom: .2rem;
+  box-shadow: 0 .05rem 0 rgb(34, 34, 34);
 }
 /* end-navigation */
 
