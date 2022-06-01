@@ -49,10 +49,14 @@ nav .link-content h1 a {
   color: var(--primary-color);
 }
 
+nav .link-content {
+  color: white;
+}
+
 nav .link-content a {
   font-weight: bold;
   text-decoration: none;
-  color: var(--secondary-color);
+  color: white;
   margin: 1rem;
 }
 
@@ -61,19 +65,20 @@ nav .btn {
   justify-content: center;
   align-items: center;
   border: 3px solid var(--secondary-color);
+  transition: 0.25s;
 }
 
 nav .btn a {
   font-weight: bold;
   text-decoration: none;
-  color: var(--secondary-color);
+  color: white;
   padding: .5rem 1rem;
   transition: 0.5s;
 }
 
-nav .btn a:hover {
-  background-color: var(--secondary-color);
-  color: white;
+nav .btn:hover {
+  margin-bottom: .5rem;
+  box-shadow: 0 .2rem 0 rgb(34, 34, 34);
 }
 /* end-navigation */
 
