@@ -73,7 +73,6 @@ nav .btn a {
   text-decoration: none;
   color: white;
   padding: .5rem 1rem;
-  transition: 0.5s;
 }
 
 nav .btn:hover {
@@ -82,6 +81,7 @@ nav .btn:hover {
 }
 
 nav .btn:active {
+  transition: 0.1s ease-out;
   margin-bottom: .2rem;
   box-shadow: 0 .05rem 0 rgb(34, 34, 34);
 }
