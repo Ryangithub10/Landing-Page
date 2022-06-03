@@ -177,6 +177,10 @@ footer a {
   margin: 5px;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
+
 footer .credits {
   color: white;
   margin-top: 10px;
