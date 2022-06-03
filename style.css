@@ -127,16 +127,17 @@ header p em {
   display: grid;
   grid-template-columns: repeat(3, 20rem);
   grid-template-areas: 'header header header' 'info1 info2 info3';
-  align-items: center;
+  align-items: top;
   justify-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100vw;
   height: 50vh;
 }
 
 .detail-info h2 {
   grid-area: header;
-  color: var(--primary-color)
+  align-self: center;
+  color: var(--primary-color);
 }
 
 .detail-info .keunggulan:nth-child(2) {
