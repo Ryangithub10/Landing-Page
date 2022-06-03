@@ -124,29 +124,35 @@ header p em {
 
 /* detail info */
 .detail-info {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 20rem);
+  grid-template-areas: 'header header header' 'info1 info2 info3';
+  align-items: center;
+  justify-items: center;
   justify-content: center;
   width: 100vw;
   height: 50vh;
-
 }
 
 .detail-info h2 {
-  position: relative;
-  top: -30px;
-  text-align: center;
+  grid-area: header;
   color: var(--primary-color)
 }
 
-.container-keunggulan {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
+.detail-info .keunggulan:nth-child(2) {
+  grid-area: info1;
+}
+
+.detail-info .keunggulan:nth-child(3) {
+  grid-area: info2;
+}
+
+.detail-info .keunggulan:last-child {
+  grid-area: info3;
 }
 
 .keunggulan {
-  width: 20rem;
+  text-align: center;
 }
 
 .keunggulan h3 {
