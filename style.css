@@ -1,5 +1,5 @@
 /* import"an */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 *, html, body {
   margin: 0;
@@ -38,7 +38,6 @@ nav {
   width: 100vw;
   height: 10vh;
   padding: 0 2rem;
-  box-shadow: 0 3.5px 10px 2.5px rgba(0, 0, 0, 0.13);
 }
 
 nav .link-content h1,
@@ -125,7 +124,7 @@ header p em {
 /* detail info */
 .detail-info {
   display: grid;
-  grid-template-columns: repeat(3, 20rem);
+  grid-template-columns: repeat(auto-fit, 20rem);
   grid-template-areas: 'header header header' 'column1 column2 column3';
   align-items: top;
   justify-items: center;
