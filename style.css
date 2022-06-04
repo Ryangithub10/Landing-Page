@@ -126,7 +126,7 @@ header p em {
 .detail-info {
   display: grid;
   grid-template-columns: repeat(3, 20rem);
-  grid-template-areas: 'header header header' 'info1 info2 info3';
+  grid-template-areas: 'header header header' 'column1 column2 column3';
   align-items: top;
   justify-items: center;
   justify-content: space-evenly;
@@ -140,16 +140,16 @@ header p em {
   color: var(--primary-color);
 }
 
-.detail-info .keunggulan:nth-child(2) {
-  grid-area: info1;
+.detail-info .column1 {
+  grid-area: column1;
 }
 
-.detail-info .keunggulan:nth-child(3) {
-  grid-area: info2;
+.detail-info .column2 {
+  grid-area: column2;
 }
 
-.detail-info .keunggulan:last-child {
-  grid-area: info3;
+.detail-info .column3 {
+  grid-area: column3;
 }
 
 .keunggulan {
