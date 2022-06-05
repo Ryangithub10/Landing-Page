@@ -8,4 +8,4 @@ EN version:
 
 the results of coding for my practice
 
-> NOTE: don't care about the content of page! thats just the gimmicks!
+> NOTE: don't care about the content of page! thats just gimmicks!
