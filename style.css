@@ -142,31 +142,17 @@ header p br {
 /* detail info */
 .detail-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 20rem);
-  grid-template-areas: 'header' 'column1' 'column2' 'column3';
-  align-items: top;
+  grid-template-columns: 20rem;
+  align-items: start;
   justify-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100vw;
   height: 120vh;
 }
 
 .detail-info h2 {
-  grid-area: header;
   align-self: center;
   color: var(--primary-color);
-}
-
-.detail-info .column1 {
-  grid-area: column1;
-}
-
-.detail-info .column2 {
-  grid-area: column2;
-}
-
-.detail-info .column3 {
-  grid-area: column3;
 }
 
 .keunggulan {
@@ -262,9 +248,26 @@ footer .credits {
   /* detail info */
   .detail-info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-template-columns: repeat(3, 20rem);
     grid-template-areas: 'header header header' 'column1 column2 column3';
+    justify-content: space-evenly;
     height: 50vh;
+  }
+
+  .detail-info h2 {
+    grid-area: header;
+  }
+
+  .detail-info .column1 {
+    grid-area: column1;
+  }
+
+  .detail-info .column2 {
+    grid-area: column2;
+  }
+
+  .detail-info .column3 {
+    grid-area: column3;
   }
   /* end-detail info */
 }
