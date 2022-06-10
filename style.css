@@ -53,7 +53,7 @@ nav {
   display: block;
   width: 28px;
   height: 3px;
-  background-color: white;
+  background-color: var(--secondary-color);
 }
 
 nav .link-content h1,
@@ -62,7 +62,7 @@ nav .link-content h1 a {
 }
 
 nav .link-content {
-  color: white;
+  color: var(--secondary-color);
 }
 
 nav .link-content a {
@@ -70,7 +70,7 @@ nav .link-content a {
 }
 
 nav .link-content span {
-  display: none
+  display: none;
 }
 
 nav .btn {
@@ -84,7 +84,7 @@ nav .btn {
 nav .btn a {
   font-weight: bold;
   text-decoration: none;
-  color: white;
+  color: var(--secondary-color);
   padding: .5rem 1rem;
 }
 
@@ -105,14 +105,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: white;
-  background-image: url(img/bg.jpg);
+  background-image: url(img/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100vw;
   padding: 0 2rem;
-  text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
 }
 
 header h1 {
@@ -126,7 +124,7 @@ header h1 span {
 
 header p {
   font-size: 16px;
-  color: inherit;
+  color: var(--secondary-color);
 }
 
 header p em {
@@ -232,7 +230,7 @@ footer .credits {
     display: inline;
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
     margin: 1rem;
   }
 
