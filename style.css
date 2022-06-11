@@ -56,6 +56,20 @@ nav {
   background-color: var(--secondary-color);
 }
 
+.exit span:first-child {
+  transform-origin: right;
+  transform: rotate(-45deg) translateX(-1px);
+}
+
+.exit span:nth-child(2) {
+  transform: scale(0);
+}
+
+.exit span:last-child {
+  transform-origin: right;
+  transform: rotate(45deg) translateX(-1px);
+}
+
 nav .link-content h1,
 nav .link-content h1 a {
   display: none;
