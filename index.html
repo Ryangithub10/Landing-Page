@@ -8,6 +8,7 @@
   <meta name="description" content="don't care about the content of page! it's just for my practice" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css">
 
   <title>Landing Pages</title>
@@ -16,7 +17,7 @@
 <body>
 
   <div class="container">
-    <nav>
+    <nav class="" id="nav">
       <span class="hamburger-menu" id="hamburger-menu">
         <span></span>
         <span></span>
@@ -24,29 +25,30 @@
       </span>
       <span class="link-content" id="link-content">
         <h1><a href="#">XGames</a></h1>
+        <a href="#">Home</a>
         <a href="#">Profile</a> <span>|</span>
         <a href="#">Game</a> <span>|</span>
         <a href="#">Library</a> <span>|</span>
         <a href="#">About</a> <span>|</span>
         <a href="#">Contact Us</a>
       </span>
-      <span class="btn"><a href="#">Log In</a></span>
+      <span class="btn" id="button"><a href="#">Log In</a></span>
     </nav>
     <header>
       <h1>Selamat datang di <span>XGame</span></h1>
       <p>Mainkan <em>30.000++</em> game-game <em>AAA, Indie, Casual, <br /> Kompetitif, dan berbagai genre lainnya diatas browser</em></p>
     </header>
     <section class="detail-info">
-      <h2>Kenapa XGame?</h2>
-      <div class="keunggulan column1">
+      <h2 data-aos="fade-up">Kenapa XGame?</h2>
+      <div class="keunggulan column1" data-aos="fade-up">
         <h3>Memiliki banyak game</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium iste ex saepe, necessitatibus eius adipisci?</p>
       </div>
-      <div class="keunggulan column2">
+      <div class="keunggulan column2" data-aos="fade-up">
         <h3>Gak perlu spek pc gaming utk bermain game</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolores, rem iusto possimus doloremque veniam?</p>
       </div>
-      <div class="keunggulan column3">
+      <div class="keunggulan column3" data-aos="fade-up">
         <h3>Ini bukan cloud gaming! Melainkan browser gaming</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, impedit! Perferendis officiis eius, itaque reiciendis porro rerum provident, ucimus dolorum?</p>
       </div>
@@ -66,6 +68,12 @@
   </div>
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
 
 </body>
 
