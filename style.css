@@ -54,6 +54,7 @@ nav {
   width: 28px;
   height: 3px;
   background-color: var(--secondary-color);
+  transition: all .5s;
 }
 
 .exit span:first-child {
