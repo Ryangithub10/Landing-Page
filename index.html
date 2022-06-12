@@ -40,15 +40,15 @@
     </header>
     <section class="detail-info">
       <h2 data-aos="fade-up">Kenapa XGame?</h2>
-      <div class="keunggulan column1" data-aos="fade-up">
+      <div class="keunggulan column1" data-aos="fade-up" data-aos-delay="300">
         <h3>Memiliki banyak game</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium iste ex saepe, necessitatibus eius adipisci?</p>
       </div>
-      <div class="keunggulan column2" data-aos="fade-up">
+      <div class="keunggulan column2" data-aos="fade-up" data-aos-delay="400">
         <h3>Gak perlu spek pc gaming utk bermain game</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolores, rem iusto possimus doloremque veniam?</p>
       </div>
-      <div class="keunggulan column3" data-aos="fade-up">
+      <div class="keunggulan column3" data-aos="fade-up" data-aos-delay="500">
         <h3>Ini bukan cloud gaming! Melainkan browser gaming</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, impedit! Perferendis officiis eius, itaque reiciendis porro rerum provident, ucimus dolorum?</p>
       </div>
@@ -71,7 +71,10 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      once: true
+      once: true,
+      easing: "ease-out",
+      offset: 200,
+      duration: 300
     });
   </script>
 
