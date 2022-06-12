@@ -44,7 +44,7 @@ nav {
 }
 
 nav.change-bg-color {
-  background-color: var(--secondary-color);
+  background-color: white;
 }
 
 .hamburger-menu {
@@ -64,13 +64,9 @@ nav.change-bg-color {
   transition: all .5s;
 }
 
-.hamburger-menu.change-color span {
-  background-color: white;
-}
-
 .exit span:first-child {
   transform-origin: right;
-  transform: rotate(-45deg) translateX(-1px);
+  transform: rotate(-47deg) translateX(-1px);
 }
 
 .exit span:nth-child(2) {
@@ -79,7 +75,7 @@ nav.change-bg-color {
 
 .exit span:last-child {
   transform-origin: right;
-  transform: rotate(45deg) translateX(-1px);
+  transform: rotate(47deg) translateX(-1px);
 }
 
 nav .link-content h1,
@@ -95,21 +91,35 @@ nav .link-content {
   flex-direction: column;
   justify-content: space-evenly;
   color: var(--secondary-color);
-  border-top: 4.5px solid darkslategray;
+  border-top: 2px solid whitesmoke;
   width: 100vw;
-  height: 15rem;
+  height: 22rem;
   z-index: -1;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
   transform: translateY(-130%);
   transition: 600ms ease-in-out;
 }
 
 nav .link-content.active {
-  background-color: var(--secondary-color);
+  background-color: white;
   transform: translateY(0);
 }
 
 nav .link-content a {
-  display: none;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--secondary-color);
+  width: 70vw;
+  padding: .5rem 0;
+  padding-left: 1rem;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transition: 250ms ease-in-out;
+}
+
+nav .link-content a:hover {
+  background-color: #99999926;
 }
 
 nav .link-content span {
@@ -141,16 +151,6 @@ nav .btn:active {
   transition: 0.1s ease-out;
   margin-bottom: .2rem;
   box-shadow: 0 .05rem 0 rgb(34, 34, 34);
-}
-
-nav .btn.change-color, nav .btn.change-color a {
-  color: white;
-  border-color: white;
-}
-
-nav .btn.change-color:hover {
-  margin-bottom: .5rem;
-  box-shadow: 0 .05rem 0 white;
 }
 /* end-navigation */
 
@@ -279,6 +279,7 @@ footer .credits {
     width: auto;
     height: auto;
     z-index: auto;
+    box-shadow: none;
     transform: translateY(0);
     transition: none;
   }
@@ -297,10 +298,14 @@ footer .credits {
 
   nav .link-content a {
     display: inline;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--secondary-color);
+    width: auto;
     margin: 1rem;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  nav .link-content a:hover {
+    background-color: transparent;
   }
 
   nav .link-content span {
