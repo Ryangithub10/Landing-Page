@@ -86,7 +86,7 @@ nav .link-content h1 a {
 nav .link-content {
   position: absolute;
   left: 0;
-  top: 4rem;
+  top: calc(5rem - 1px);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
