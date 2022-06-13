@@ -35,7 +35,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
   width: 100vw;
   height: 10vh;
   padding: 0 2rem;
@@ -268,6 +267,11 @@ footer .credits {
 /* desktop version */
 @media screen and (min-width: 577px) {
   /* navigation */
+  nav {
+    background-color: rgba(255, 255, 255, 80%);
+    backdrop-filter: 5px;
+  }
+
   .hamburger-menu {
     display: none;
   }
