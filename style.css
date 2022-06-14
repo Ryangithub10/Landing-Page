@@ -316,17 +316,18 @@ footer .credits {
 
   .detail-info .column3 {
     grid-area: column3;
+    width: 26rem;
   }
   /* end-detail info */
 }
 /* end-tablet version */
 
 /* desktop version */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 825px) {
   /* navigation */
   nav {
     background-color: rgba(255, 255, 255, 80%);
-    backdrop-filter: 5px;
+    backdrop-filter: blur(5px);
   }
 
   .hamburger-menu {
