@@ -365,7 +365,6 @@ footer .credits {
     z-index: auto;
     box-shadow: none;
     transform: translateY(0);
-    transition: none;
   }
 
   nav .link-content a:nth-child(2) {
