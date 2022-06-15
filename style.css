@@ -89,6 +89,7 @@ nav .link-content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  background-color: white;
   color: var(--secondary-color);
   border-top: 2px solid whitesmoke;
   width: 100vw;
@@ -96,11 +97,10 @@ nav .link-content {
   z-index: -1;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
   transform: translateY(-130%);
-  transition: 600ms ease-in-out;
+  transition: transform 600ms ease-in-out;
 }
 
 nav .link-content.active {
-  background-color: white;
   transform: translateY(0);
 }
 
@@ -349,6 +349,7 @@ footer .credits {
   /* navigation */
   nav {
     background-color: rgba(255, 255, 255, 80%);
+    transition: none;
     backdrop-filter: blur(5px);
   }
 
@@ -359,12 +360,14 @@ footer .credits {
   nav .link-content {
     position: static;
     display: block;
+    background-color: transparent;
     border-top: none;
     width: auto;
     height: auto;
     z-index: auto;
     box-shadow: none;
     transform: translateY(0);
+    transition: none;
   }
 
   nav .link-content a:nth-child(2) {
