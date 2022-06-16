@@ -441,6 +441,7 @@ footer .credits {
 
   .detail-info .column3 {
     grid-area: column3;
+    width: auto;
   }
   /* end-detail info */
 
